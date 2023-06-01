@@ -1,14 +1,9 @@
-// import logo from './logo.svg';
-// import './App.css';
+import React from 'react'
 
-import { Home, About, Qualification, Services, Skills, Works, Testimonials, Contact } from  '../src/pages';
-import { Footer, Navbar } from './components';
-
-function App() {
+const ColorSwitcher = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-      <input type="radio" name='color' id="color-1" />
+    <div>
+        <input type="radio" name='color' id="color-1" />
         <input type="radio" name='color' id="color-2" />
         <input type="radio" name='color' id="color-3" />
         <input type="radio" name='color' id="color-4" />
@@ -46,21 +41,8 @@ function App() {
                 <label htmlFor="color-10" className="color-10 color"></label>
             </div>
         </div>
-      <Navbar />
-      <main className='main'>
-      <Home />
-      <About />
-      <Qualification />
-      <Services />
-      <Skills />
-      <Works />
-      <Testimonials />
-      <Contact />
-      </main>
-      <Footer />
-      </header>
     </div>
-  );
+  )
 }
 
-export default App;
+export default ColorSwitcher
