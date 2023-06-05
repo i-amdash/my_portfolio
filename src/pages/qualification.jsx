@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { education, experience } from '../constants';
 
 const qualification = () => {
   return (
@@ -8,107 +9,57 @@ const qualification = () => {
             <div className="resume__group">
                 <h3 className="resume__heading">education</h3>
                 <div className="resume__items">
-                    <div className="resume__item">
+                    { education.map((item) => (
+                        <div className="resume__item">
                         <div className="resume__header">
-                            <h3 className="resume__subtitle">coderhouse courses</h3>
-                            <span className="resume__icon">+</span>
+                            <h3 className="resume__subtitle">{item.title}</h3>
+                            <span className="resume__icon">{item.icon}</span>
                         </div>
                         <div className="resume__content">
                             <div className="resume__date-title">
-                                <h3 className="resume__title">backend programming</h3>
-                                <span className="resume__date">2020 - 2022</span>
+                                <h3 className="resume__title">{item.subtitle}</h3>
+                                <span className="resume__date">{item.date}</span>
                             </div>
-
-                            <p className="resume__description">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto at, iste nobis neque veniam soluta animi saepe quasi debitis exercitationem tempora libero delectus id commodi! Dolore fugit porro ad aperiam.
-                            </p>
+                            <ul>
+                            {item.description.map((item) => (
+                                    <li className="resume__description">
+                                        {item}
+                                    </li>
+                                    ))}
+                            </ul>
+                            
                         </div>
                     </div>
+                    ))}
+                    
                 </div>
-                    <div className="resume__item">
-                        <div className="resume__header">
-                            <h3 className="resume__subtitle">coderhouse courses</h3>
-                            <span className="resume__icon">-</span>
-                        </div>
-                        <div className="resume__content">
-                            <div className="resume__date-title">
-                                <h3 className="resume__title">backend programming</h3>
-                                <span className="resume__date">2020 - 2022</span>
-                            </div>
-
-                            <p className="resume__description">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto at, iste nobis neque veniam soluta animi saepe quasi debitis exercitationem tempora libero delectus id commodi! Dolore fugit porro ad aperiam.
-                            </p>
-                        </div>
-                    </div>
-                    <div className="resume__item">
-                        <div className="resume__header">
-                            <h3 className="resume__subtitle">coderhouse courses</h3>
-                            <span className="resume__icon">+</span>
-                        </div>
-                        <div className="resume__content">
-                            <div className="resume__date-title">
-                                <h3 className="resume__title">backend programming</h3>
-                                <span className="resume__date">2020 - 2022</span>
-                            </div>
-
-                            <p className="resume__description">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto at, iste nobis neque veniam soluta animi saepe quasi debitis exercitationem tempora libero delectus id commodi! Dolore fugit porro ad aperiam.
-                            </p>
-                        </div>
-                    </div>
                 </div>
             <div className="resume__group">
-                <h3 className="resume__heading">education</h3>
+                <h3 className="resume__heading">experience</h3>
                 <div className="resume__items">
-                    <div className="resume__item">
+                    {experience.map((item) => (
+                        <div className="resume__item">
                         <div className="resume__header">
-                            <h3 className="resume__subtitle">coderhouse courses</h3>
-                            <span className="resume__icon">+</span>
+                            <h3 className="resume__subtitle">{item.title}</h3>
+                            <span className="resume__icon">{item.icon}</span>
                         </div>
                         <div className="resume__content">
                             <div className="resume__date-title">
-                                <h3 className="resume__title">backend programming</h3>
-                                <span className="resume__date">2020 - 2022</span>
+                                <h3 className="resume__title">{item.subtitle}</h3>
+                                <span className="resume__date">{item.date}</span>
                             </div>
-
-                            <p className="resume__description">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto at, iste nobis neque veniam soluta animi saepe quasi debitis exercitationem tempora libero delectus id commodi! Dolore fugit porro ad aperiam.
-                            </p>
+                            <ul>
+                            {item.description.map((item) => (
+                                    <li className="resume__description">
+                                        {item}
+                                    </li>
+                                    ))}
+                            </ul>
+                            
                         </div>
                     </div>
-                    <div className="resume__item">
-                        <div className="resume__header">
-                            <h3 className="resume__subtitle">coderhouse courses</h3>
-                            <span className="resume__icon">-</span>
-                        </div>
-                        <div className="resume__content">
-                            <div className="resume__date-title">
-                                <h3 className="resume__title">backend programming</h3>
-                                <span className="resume__date">2020 - 2022</span>
-                            </div>
-
-                            <p className="resume__description">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto at, iste nobis neque veniam soluta animi saepe quasi debitis exercitationem tempora libero delectus id commodi! Dolore fugit porro ad aperiam.
-                            </p>
-                        </div>
-                    </div>
-                    <div className="resume__item">
-                        <div className="resume__header">
-                            <h3 className="resume__subtitle">coderhouse courses</h3>
-                            <span className="resume__icon">+</span>
-                        </div>
-                        <div className="resume__content">
-                            <div className="resume__date-title">
-                                <h3 className="resume__title">backend programming</h3>
-                                <span className="resume__date">2020 - 2022</span>
-                            </div>
-
-                            <p className="resume__description">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto at, iste nobis neque veniam soluta animi saepe quasi debitis exercitationem tempora libero delectus id commodi! Dolore fugit porro ad aperiam.
-                            </p>
-                        </div>
-                    </div>
+                    ))}
+                    
                 </div>
             </div>
         </div>

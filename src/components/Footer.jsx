@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { socialLinks } from '../constants';
 
 const Footer = () => {
   return (
@@ -7,15 +8,12 @@ const Footer = () => {
             <p className="footer__copyright">&copy; 2023 adedoyinsola, all rights reserved.</p>
 
                    <div className="footer__social-links">
-                        <a href="index.html" className="footer__social-link">
-                            <i class="fa-brands fa-twitter"></i>
-                        </a>
-                        <a href="index.html" className="footer__social-link">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                        <a href="index.html" className="footer__social-link">
-                        <i class="fa-brands fa-linkedin"></i>
-                        </a>
+                    {socialLinks.map((item) => (
+                      <a href={item.link} className="footer__social-link">
+                      <i class={item.icon}></i>
+                  </a>
+                    ))}
+                        
                     </div>
         </div>
     </footer>
