@@ -54,12 +54,10 @@ const qualification = () => {
                                         {item}
                                     </li>
                                     ))}
-                            </ul>
-                            
+                            </ul>      
                         </div>
                     </div>
                     ))}
-                    
                 </div>
             </div>
         </div>

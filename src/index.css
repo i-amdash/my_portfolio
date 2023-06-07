@@ -426,6 +426,7 @@ input[type= 'checkbox']
   position: relative;
   vertical-align: middle;
 }
+
 /* buttons */
 
 .btn {
@@ -509,6 +510,9 @@ input[type= 'checkbox']
 .about__img:nth-child(1) {
 clip-path: polygon(0 0, 0 32%, 28% 0);
 transform: translateY(-1.25rem);
+}
+.about__image{
+  display: none;
 }
 
 .about__img:nth-child(2) {
@@ -931,4 +935,53 @@ transform: translateY(-1.25rem);
 .footer__social-link {
   color: var(--text-color);
   font-size: var(--large-font-size);
+}
+
+/* media queries */
+
+@media only screen and (max-width: 912px) {
+  .home__container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .about__container, .resume__container, .skills__container, .work__container, .contact__container {
+    display: flex;
+    flex-direction: column;
+  }
+  .about__img-wrapper {
+    position: relative;
+    height: 400px;
+  }
+  .about__img {
+    display: none;
+  }
+  .about__image{
+    display: block;
+    height: 100%;
+    border-radius: 2rem;
+  }
+  .about__data{
+    display: flex;
+    flex-direction: column;
+  }
+  .about__buttom{
+    column-gap: 1rem;
+  }
+  .about__social-links::before{
+    width: 20px;
+  }
+
+  .header {
+    position: fixed;
+    overflow: hidden;
+  }
+
+  .nav__list {
+    display: none;
+  }
+
+  .resume__icon {
+    display: none;
+  }
+  
 }

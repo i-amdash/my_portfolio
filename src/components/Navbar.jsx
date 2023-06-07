@@ -1,33 +1,110 @@
-import React from 'react'
 
+import React from 'react';
+import { motion } from 'framer-motion';
+import { useState } from 'react';
+import { HiMenuAlt4, HiX } from 'react-icons/hi';
+import './Navbar.scss';
 const Navbar = () => {
-  return (
-    <header className='header'>
-    <nav className='nav container'>
-        <a href='#home' className='nav__logo'>doyinsola</a>
-        <ul className='nav__list'>
-            <li className='nav__item'>
-                <a href="#home" className="nav__link active-link">home</a>
-            </li>
-            <li className='nav__item'>
-                <a href="#about" className="nav__link active-link">about</a>
-            </li>
-            <li className='nav__item'>
-                <a href="#qualification" className="nav__link active-link">experience</a>
-            </li>
-            <li className='nav__item'>
-                <a href="#services" className="nav__link active-link">services</a>
-            </li>
-            <li className='nav__item'>
-                <a href="#work" className="nav__link active-link">portfolio</a>
-            </li>
-            <li className='nav__item'>
-                <a href="#contact" className="nav__link active-link">contact</a>
-            </li>
-        </ul>
-    </nav>
-    </header>
-  )
-}
+  const [toggle, setToggle] = useState(false);
 
-export default Navbar
+  return (
+    <header className="header">
+    <nav className='nav container'>
+    <a href='#home' className='nav__logo'>doyinsola</a>
+        <ul className="nav__list">
+          {[
+            {
+              title: 'home',
+              url: '#home',
+            },
+            {
+              title: 'about',
+              url: '#about',
+            },
+            {
+              title: 'qualification',
+              url: '#qualification',
+            },
+            {
+              title: 'services',
+              url: '#services',
+            },
+            {
+              title: 'work',
+              url: '#work',
+            },
+            {
+              title: 'contact',
+              url: '#contact',
+            },
+          ].map((item) => (
+            <li
+              key={
+            `link-${item.title}`
+          }
+              className="nav__item"
+            >
+              <div />
+              <a className='nav__link active-link' href={item.url}>
+                {item.title}
+              </a>
+            </li>
+          ))}
+        </ul>
+          <div className="app__navbar-menu">
+            <HiMenuAlt4 onClick={() => setToggle(true)} />
+
+            {
+            toggle && (
+              <motion.div
+                whileInView={{ x: [300, 0] }}
+                transition={{ duration: 0.85, ease: 'easeOut' }}
+              >
+                <HiX onClick={() => setToggle(false)} />
+                <ul className="nav__list">
+                  {[
+                    {
+                        title: 'home',
+                        url: '#home',
+                      },
+                      {
+                        title: 'about',
+                        url: '#about',
+                      },
+                      {
+                        title: 'qualification',
+                        url: '#qualification',
+                      },
+                      {
+                        title: 'services',
+                        url: '#services',
+                      },
+                      {
+                        title: 'work',
+                        url: '#work',
+                      },
+                      {
+                        title: 'contact',
+                        url: '#contact',
+                      },
+                  ].map((item) => (
+                    <li
+                      key={item.title}
+                      className="nav__item"
+                    >
+                      <a className='nav__link active-link' href={item.url}>
+                        {item.title}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </motion.div>
+            )
+          }
+          </div>
+      </nav>
+    </header>
+  );
+};
+
+export default Navbar;

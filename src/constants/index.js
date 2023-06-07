@@ -1,16 +1,16 @@
-export const home = [
+export const homes = [
     {
         "small_text": "hello",
         "description": "i build web and mobile applications for companies and clients, both locally and foreign."
     }
-]
+];
 
-export const about =[
+export const abouts =[
     {
         "title": "i'm adedoyinsola ashimi, i build web and mobile applications",
         "description": "i am a software engineer and a chartered accountant, i currently work at landmark africa building and managing the company's web and mobile applications which span from hotel booking to ecommerce applications on both web and mobile."
     }
-]
+];
 
 export const aboutInfo = [
     {
@@ -29,7 +29,7 @@ export const aboutInfo = [
         "title": "email",
         "text": "ashimidoyin@yahoo.com"
     }
-]
+];
 
 export const socialLinks = [
     {
@@ -45,7 +45,7 @@ export const socialLinks = [
         "link": "linkedin.com/in/adedoyinsola-ashimi-199b98170"
     }
 
-]
+];
 
 export const education = [
     {
@@ -80,7 +80,7 @@ export const education = [
             "the complete dart learning guide [2022 edition] by hussain fulaih"
         ]
     }
-]
+];
 
 export const experience = [
     {
@@ -115,7 +115,7 @@ export const experience = [
             "prepared the capital and personnel budget for multiple units and defended them at lagos state house of assembly"
         ]
     }
-]
+];
 
 export const frontendStack = [
     {
