@@ -1,6 +1,5 @@
 import React from 'react'
 import { project1, project2, project3 } from '../assets';
-import { Link } from "react-router-dom";
 
 const works = () => {
   return (
@@ -22,13 +21,11 @@ const works = () => {
                 </div>
             </div>
             <div className="work__card">
-                <Link to='icezeik.netlify.app'>
                 <img src={project3} className='work__img' alt='work img'/>
                 <div className="work__details">
                     <h3 className="work__title">icezeik</h3>
                     <span className="work__description">a landing page for a client</span>
                 </div>
-                </Link>
             </div>
         </div>
     </section>
