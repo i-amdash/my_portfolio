@@ -35,7 +35,7 @@ const about = () => {
                     ))}
                 </ul>
                 <div className="about__buttom">
-                    <a href="index.html" className="btn">Download CV</a>
+                <a href="#work" className="btn">portfolio</a>
                     <div className="about__social-links">
                         {socialLinks.map((item) => (
                             <a href={item.link} className="about__social-link" target='_blank' rel="noreferrer">

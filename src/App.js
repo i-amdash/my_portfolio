@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-      <input type="radio" name='color' id="color-1" />
+        <input type="radio" name='color' id="color-1" />
         <input type="radio" name='color' id="color-2" />
         <input type="radio" name='color' id="color-3" />
         <input type="radio" name='color' id="color-4" />
@@ -52,8 +52,8 @@ function App() {
       <About />
       <Qualification />
       {/* <Services /> */}
-      <Skills />
       <Works />
+      <Skills />
       {/* <Testimonials /> */}
       <Contact />
       </main>
