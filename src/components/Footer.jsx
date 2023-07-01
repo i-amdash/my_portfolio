@@ -2,6 +2,7 @@ import React from 'react';
 import { socialLinks } from '../constants';
 
 const Footer = () => {
+  
   return (
     <footer className='footer'>
         <div className="footer__container container">
@@ -9,7 +10,7 @@ const Footer = () => {
 
                    <div className="footer__social-links">
                     {socialLinks.map((item) => (
-                      <a href={item.link} className="footer__social-link">
+                      <a href="/" className="footer__social-link">
                       <i class={item.icon}></i>
                   </a>
                     ))}
