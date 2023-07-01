@@ -1,5 +1,5 @@
 import React from 'react';
-import image  from '../assets/profile.png';
+import image  from '../assets/me2.png';
 import { homes } from '../constants';
 
 const home = () => {

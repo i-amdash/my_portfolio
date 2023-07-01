@@ -1,5 +1,5 @@
 import React from 'react';
-import image from '../assets/about.jpeg';
+import image from '../assets/me.jpeg';
 import { abouts, aboutInfo, socialLinks } from '../constants';
 
 const about = () => {

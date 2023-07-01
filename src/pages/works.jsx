@@ -1,5 +1,6 @@
 import React from 'react'
-import { about01, about02,about03, about04 } from '../assets';
+import { project1, project2, project3 } from '../assets';
+import { Link } from "react-router-dom";
 
 const works = () => {
   return (
@@ -7,32 +8,27 @@ const works = () => {
         <h2 className="section__title title-center" data-title="my portfolio">recent works</h2>
         <div className="work__container container grid">
             <div className="work__card">
-                <img src={about01} className='work__img' alt='work img'/>
+                <img src={project1} className='work__img' alt='work img'/>
                 <div className="work__details">
-                    <h3 className="work__title">web design</h3>
-                    <span className="work__description">this is a short description</span>
+                    <h3 className="work__title">firstmed hospital</h3>
+                    <span className="work__description">a template for an hospital website i created</span>
                 </div>
             </div>
             <div className="work__card">
-                <img src={about02} className='work__img' alt='work img'/>
+                <img src={project2} className='work__img' alt='work img'/>
                 <div className="work__details">
-                    <h3 className="work__title">mobile app design</h3>
-                    <span className="work__description">this is a short description</span>
+                    <h3 className="work__title">health talk</h3>
+                    <span className="work__description">a blog application for firstmed hospital</span>
                 </div>
             </div>
             <div className="work__card">
-                <img src={about03} className='work__img' alt='work img'/>
+                <Link to='icezeik.netlify.app'>
+                <img src={project3} className='work__img' alt='work img'/>
                 <div className="work__details">
-                    <h3 className="work__title">accounting</h3>
-                    <span className="work__description">this is a short description</span>
+                    <h3 className="work__title">icezeik</h3>
+                    <span className="work__description">a landing page for a client</span>
                 </div>
-            </div>
-            <div className="work__card">
-                <img src={about04} className='work__img' alt='work img'/>
-                <div className="work__details">
-                    <h3 className="work__title">mobile and web engineering</h3>
-                    <span className="work__description">this is a short description</span>
-                </div>
+                </Link>
             </div>
         </div>
     </section>
