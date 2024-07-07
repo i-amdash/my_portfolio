@@ -13,7 +13,7 @@ const home = () => {
                     </p></> 
                 ))}   
                 <div className="home__buttons">
-                    <a href="#contact" className="btn">let's build together</a>
+                    <a href="#contact" className="btn">build with me</a>
                     <a href="#work" className="btn btn-transparent">portfolio</a>
                 </div>
             </div>
