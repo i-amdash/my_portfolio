@@ -1,7 +1,7 @@
 // import logo from './logo.svg';
 // import './App.css';
 
-import { Home, About, Qualification, Skills, Works, Contact } from  '../src/pages';
+import { Home, About, Skills, Works, Contact } from  '../src/pages';
 import { Footer, Navbar } from './components';
 
 function App() {
@@ -49,11 +49,11 @@ function App() {
       <Navbar />
       <main className='main'>
       <Home />
-      <About />
-      <Qualification />
-      {/* <Services /> */}
       <Works />
+      <About />
       <Skills />
+      {/* <Qualification /> */}
+      {/* <Services /> */}
       {/* <Testimonials /> */}
       <Contact />
       </main>

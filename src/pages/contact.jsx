@@ -8,24 +8,24 @@ const contact = () => {
             <div className="contact__details">
                 <div className="contact__item">
                     <i className="fa-solid fa-phone contact__icon"></i>
-                    <div>
+                    <a href='tel:+2349135525157' rel='noreferrer' target='_blank'>
                         <h3 className="contact__title">phone number</h3>
                         <span className="contact__data">09135525157</span>
-                    </div>
+                    </a>
                 </div>
                 <div className="contact__item">
                     <i className="fa-solid fa-envelope contact__icon"></i>
-                    <div>
+                    <a href='mailto:ashimidoyin@yahoo.com' rel='noreferrer' target='_blank'>
                         <h3 className="contact__title">mailing address</h3>
                         <span className="contact__data">ashimidoyin@yahoo.com</span>
-                    </div>
+                    </a>
                 </div>
                 <div className="contact__item">
                     <i className="fa-solid fa-location-dot contact__icon"></i>
-                    <div>
+                    <a href='https://www.google.com/maps/place/Lagos/@6.5483002,2.9721219,11z/data=!3m1!4b1!4m6!3m5!1s0x103b8b2ae68280c1:0xdc9e87a367c3d9cb!8m2!3d6.5243793!4d3.3792057!16zL20vMGxuZnk?entry=ttu' rel='noreferrer' target='_blank'>
                         <h3 className="contact__title">residetial address</h3>
                         <span className="contact__data">lagos, nigeria</span>
-                    </div>
+                    </a>
                 </div>
             </div>
 

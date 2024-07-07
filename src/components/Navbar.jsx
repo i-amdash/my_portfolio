@@ -18,20 +18,16 @@ const Navbar = () => {
               url: '#home',
             },
             {
+              title: 'work',
+              url: '#work',
+            },
+            {
               title: 'about',
               url: '#about',
             },
             {
-              title: 'qualification',
-              url: '#qualification',
-            },
-            {
-              title: 'services',
-              url: '#services',
-            },
-            {
-              title: 'work',
-              url: '#work',
+              title: 'stack',
+              url: '#stack',
             },
             {
               title: 'contact',
@@ -68,21 +64,18 @@ const Navbar = () => {
                         url: '#home',
                       },
                       {
+                        title: 'work',
+                        url: '#work',
+                      },
+                      {
                         title: 'about',
                         url: '#about',
                       },
                       {
-                        title: 'qualification',
-                        url: '#qualification',
+                        title: 'stack',
+                        url: '#stack',
                       },
-                      {
-                        title: 'services',
-                        url: '#services',
-                      },
-                      {
-                        title: 'work',
-                        url: '#work',
-                      },
+                    
                       {
                         title: 'contact',
                         url: '#contact',

@@ -33,16 +33,16 @@ export const aboutInfo = [
 
 export const socialLinks = [
     {
-        "icon": "fa-brands fa-twitter",
-        "link": "twitter.com/i_amdash"
+        "icon": "fa-brands fa-github",
+        "link": "https://github.com/i-amdash"
     },
     {
         "icon": "fa-brands fa-instagram",
-        "link": "instagram.com/__doyinsola"
+        "link": "https://www.instagram.com/__doyinsola/"
     },
     {
         "icon": "fa-brands fa-linkedin",
-        "link": "linkedin.com/in/adedoyinsola-ashimi-199b98170"
+        "link": "https://www.linkedin.com/in/adedoyinsola-ashimi"
     }
 
 ];
@@ -119,28 +119,10 @@ export const experience = [
 
 export const frontendStack = [
     {
-        "title": "php",
-        "percent": "85",
-        "description": "i have built applications for landmark africa using laravel in php, so far i have worked with my team to build three robust applications with laravel livewire",
-        "width": 305
-    },
-    {
-        "title": "javascript",
-        "percent": "88",
-        "description": "i have built applications for clients using using simple html, css and javascript, i have built web applications for clients and personal applications in these languages",
-        "width": 325
-    },
-    {
-        "title": "react",
-        "percent": "88",
-        "description": "i have built dynamic applications for clients using react, i have worked with react on both client and personal projects and i have managed to build sustainable applications",
-        "width": 325
-    },
-    {
         "title": "flutter",
-        "percent": "86",        
-        "description": "i have built mobile applications personally and built features for landmark africa using flutter, so far i have worked with my team to build new ecommerce features on landmark citizen application with flutter",
-        "width": 315
+        "percent": "92",        
+        "description": "i have built mobile applications personally and built features for landmark africa using flutter, i have built new ecommerce features on the landmark citizen application with flutter and worked with real time call engines.",
+        "width": 345
     },
     {
         "title": "vue",
@@ -153,5 +135,23 @@ export const frontendStack = [
         "percent": "85",
         "description": "i have designed a lot of my applications in tailwind, a very good framework that i have become very fond of, i have built really sustainable and reusable designs using this framework",
         "width": 305
-    }
+    },
+    {
+        "title": "php",
+        "percent": "85",
+        "description": "i have built applications for landmark africa using laravel in php, so far i have worked with my team to build three robust applications with laravel livewire",
+        "width": 305
+    },
+    {
+        "title": "kotlin",
+        "percent": "84",
+        "description": "working on android applications using kotlin has drastically improved my understanding of native android development, very easy to follow through.",
+        "width": 325
+    },
+    {
+        "title": "react",
+        "percent": "88",
+        "description": "i have built dynamic applications for clients using react, i have worked with react on both client and personal projects and i have managed to build sustainable applications",
+        "width": 325
+    },
 ];

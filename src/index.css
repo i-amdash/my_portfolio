@@ -488,6 +488,10 @@ input[type= 'checkbox']
 
 /* about section */
 
+.about{
+  background-color: var(--container-color);
+}
+
 .about__container {
   grid-template-columns: 4fr 8fr;
   align-items: center;
@@ -700,9 +704,6 @@ transform: translateY(-1.25rem);
 
 /* skills section */
 
-.skills{
-  background-color: var(--container-color);
-}
 
 .skills__container {
   grid-template-columns: repeat(3, 1fr);
@@ -794,9 +795,15 @@ transform: translateY(-1.25rem);
 
 .work__title,
 .work__description {
+  padding-left: 1rem;
+  padding-right: 1rem;
   color: var(--white);
   transform: translateY(1.5rem);
   transition: all .3s ease-in-out;
+}
+
+.work__description ul {
+  padding-left: 1rem;
 }
 
 .work__title{
@@ -856,6 +863,10 @@ transform: translateY(-1.25rem);
 
 /* contact section */
 
+.contact {
+  background-color: var(--container-color);
+}
+
 .contact__container {
   grid-template-columns: 5fr 7fr;
   align-items: flex-start;
@@ -893,7 +904,7 @@ transform: translateY(-1.25rem);
 
 .input__control {
   color: var(--title-color);
-  background-color: var(--container-color);
+  background-color: var(--body-color);
   border: 1px solid transparent;
   padding: 0.9rem 0.75rem;
   width: 100%;
@@ -913,7 +924,7 @@ transform: translateY(-1.25rem);
 /* footer section */
 
 .footer{
-  background-color: var(--container-color);
+  background-color: var(--body-color);
   padding-block: 3rem;
 }
 

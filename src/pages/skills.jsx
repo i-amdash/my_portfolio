@@ -3,7 +3,7 @@ import {frontendStack}  from '../constants'
 
 const skills = () => {
   return (
-    <section className='skills section'>
+    <section className='skills section' id='stack'>
         <h2 className="section__title title-center" data-title='my frontend stack'>
             i build applications with...
         </h2>
