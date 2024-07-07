@@ -19,7 +19,7 @@ export const aboutInfo = [
     },
     {
         "title": "stack",
-        "text": "flutter, react, vue, next, laravel"
+        "text": "flutter, react, kotlin, vue, next, laravel"
     },
     {
         "title": "from",
